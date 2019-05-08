@@ -3,7 +3,7 @@ const port=process.env.PORT || 3000
 const server = http.createServer((req, res) => {
 res.statusCode = 200;
 res.setHeader('Content-Type', 'text/html');
-res.end('<h2>Apostrophe Inline Login Demo</h2><button type="button" onclick="alert('Hello world!')">Login</button>');
+res.end('<h1>Apostrophe Inline Login Demo</h1>');
 });
 server.listen(port,() => {
 console.log(`Server running at port `+port);
